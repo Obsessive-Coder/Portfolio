@@ -1,0 +1,5 @@
+.main-header {
+  background: url("../images/main-header.png") no-repeat fixed;
+  background-size: cover;
+  height: 768px;
+}
