@@ -1,5 +1,20 @@
-.main-header {
-  background: url("../images/main-header.png") no-repeat fixed;
-  background-size: cover;
-  height: 768px;
-}
+  html {
+    min-height: 100%;
+    position: relative;
+  }
+
+  body {
+    background: url("../images/main-header.png") no-repeat fixed;
+    background-size: cover;
+    /* height: 768px; UNDO IF CHANGED BACK TO .main-header */
+    margin-bottom: 60px;
+  }
+
+  .footer {
+    background-color: #f5f5f5;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    width: 100%;
+  }
