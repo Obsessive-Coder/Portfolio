@@ -41,19 +41,19 @@
               <a class="nav-link" href="#bio">Bio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
               <img class="img-responsive img-circle" src="assets/images/menu-logo.jpg" alt="menu logo">
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
+              <a class="nav-link" href="#work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Education</a>
+              <a class="nav-link" href="#education">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -66,8 +66,8 @@
       <section id="bio" class="main-section">
         <header>
           <h1>What's Up With
-          <em>This</em> Guy?
-        </h1>
+            <em>This</em> Guy?
+          </h1>
           <h2>Expect More</h2>
         </header>
         <div class="row section-content">
@@ -173,8 +173,92 @@
       </section>
 
       <!-- Contact Section -->
-      <section>
+      <section id="contact">
+        <header>
+          <h1>Let's Work Together</h1>
+          <h2>Subheading</h2>
+        </header>
+        <div class="row section-content">
+          <!-- Contact Information -->
+          <div class="col-5">
+            <!-- Personal Information -->
+            <div class="container-fluid">
+              <!-- Location -->
+              <div class="personal-info">
+                <h3>
+                  <i class="fa fa-map-marker"></i>
+                  Location
+                </h3>
+                <span>Tucson, AZ</span>
+              </div>
 
+              <!-- Email Address -->
+              <div class="personal-info">
+                <h3>
+                  <i class="fa fa-pencil"></i>
+                  Email Address
+                </h3>
+                <span>jaredhuff85@gmail.com</span>
+              </div>
+
+              <!-- Phone Number -->
+              <div class="personal-info">
+                <h3>
+                  <i class="fa fa-phone"></i>
+                  Phone Number
+                </h3>
+                <span>(520) 975-0742</span>
+              </div>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="container-fluid">
+              <ul class="fa-ul d-flex justify-content-around social-links">
+                <!-- GitHub -->
+                <li class="fa-li">
+                  <a class="rounded-circle" href="https://github.com/Obsessive-Coder" target="_blank">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <!-- LinkedIn -->
+                <li class="fa-li">
+                  <a class="rounded-circle" href="https://www.linkedin.com/in/jared-huffstutler" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-7 text-left">
+            <form action="index.html" method="post">
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label-lg sr-only" for="name">Name</label>
+                <input class="form-control form-control-lg" type="text" id="name" name="name" placeholder="Your name here..." required>
+                <div class="invalid-tooltip">
+                  I should know who I'll be talking to.
+                </div>
+              </div>
+              <!-- Email Address -->
+              <div class="form-group">
+                <label class="form-label-lg sr-only" for="email">Email Address</label>
+                <input class="form-control form-control-lg" type="email" id="email" name="email" placeholder="Your email address here..." required>
+                <div class="invalid-tooltip">
+                  I need a way to contact you.
+                </div>
+              </div>
+              <!-- Messege -->
+              <div class="form-group">
+                <label class="form-label-lg sr-only" for="message">Message</label>
+                <textarea class="form-control form-control-lg" name="message" placeholder="Your messege here..." rows="5"></textarea>
+              </div>
+
+              <button class="btn btn-outline-primary" type="submit" name="submit">Send It</button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 

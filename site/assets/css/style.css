@@ -120,3 +120,28 @@ body {
   line-height: 90%;
   text-align: justify;
 }
+
+/* Contact Section */
+
+.personal-info {
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.personal-info span {
+  color: #777;
+  line-height: 28px;
+}
+
+.social-links li a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  line-height: 100px;
+}
+
+form .form-group textarea {
+  resize: none;
+}
