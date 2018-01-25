@@ -1,9 +1,9 @@
 $(document).ready(function() {
+  // Store the position of the nav.
   var navTopOffset = $('nav').offset().top;
 
-  // On Window Scroll
+  // On Window Scroll And Load
   $(window).on('scroll load', function() {
-    // The mouse was scolled up.
     // Remove fixed-bottom class from the nav if it exists.
     if ($('nav').hasClass('fixed-bottom')) {
       $('nav').removeClass('fixed-bottom');
@@ -11,15 +11,13 @@ $(document).ready(function() {
 
     // If the site nav is at the top of the screen ...
     if ($(window).scrollTop() > navTopOffset - 20) {
-      // The site nav is at the top of the screen.
       // If the site nav does not hav the fixed-top class.
       if (!$('nav').hasClass('fixed-top')) {
         $('nav').addClass('fixed-top');
       }
       return;
     } else {
-      // The site nav is not at the not of the screen.
-      // If the site nav has the fixed-top class ...
+      // The site nav is not at the not top of the screen.
       if ($('nav').hasClass('fixed-top')) {
         $('nav').removeClass('fixed-top');
       }
@@ -38,6 +36,8 @@ $(document).ready(function() {
 
   // Nav Item Clicked
   $('#navbar-collapse').click(function() {
+    // Trigger the scroll event so the nav is fixed and the section
+    // is correctly positioned.
     $(window).trigger('scroll');
   });
 });
