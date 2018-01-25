@@ -232,11 +232,11 @@
 
           <!-- Contact Form -->
           <div class="col-7 text-left">
-            <form action="index.html" method="post">
+            <form class="needs-validation" action="index.html" method="post" novalidate>
               <!-- Name -->
               <div class="form-group">
                 <label class="form-label-lg sr-only" for="name">Name</label>
-                <input class="form-control form-control-lg" type="text" id="name" name="name" placeholder="Your name here..." required>
+                <input class="form-control form-control-lg rounded" type="text" id="name" name="name" placeholder="Your name here..." required>
                 <div class="invalid-tooltip">
                   I should know who I'll be talking to.
                 </div>
@@ -244,7 +244,7 @@
               <!-- Email Address -->
               <div class="form-group">
                 <label class="form-label-lg sr-only" for="email">Email Address</label>
-                <input class="form-control form-control-lg" type="email" id="email" name="email" placeholder="Your email address here..." required>
+                <input class="form-control form-control-lg rounded" type="email" id="email" name="email" placeholder="Your email address here..." required>
                 <div class="invalid-tooltip">
                   I need a way to contact you.
                 </div>
@@ -252,10 +252,17 @@
               <!-- Messege -->
               <div class="form-group">
                 <label class="form-label-lg sr-only" for="message">Message</label>
-                <textarea class="form-control form-control-lg" name="message" placeholder="Your messege here..." rows="5"></textarea>
+                <textarea class="form-control form-control-lg rounded" name="message" placeholder="Your messege here..." rows="5"></textarea>
               </div>
 
-              <button class="btn btn-outline-primary" type="submit" name="submit">Send It</button>
+              <div class="form-row">
+                <div class="col-10 text-center">
+
+                </div>
+                <div class="col-2">
+                  <button class="btn btn-outline-primary btn-lg rounded" type="submit" name="submit">Send It</button>
+                </div>
+              </div>
             </form>
           </div>
         </div>

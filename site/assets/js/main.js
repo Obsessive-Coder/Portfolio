@@ -40,4 +40,9 @@ $(document).ready(function() {
     // is correctly positioned.
     $(window).trigger('scroll');
   });
+
+  // Contact Form Submitted
+  $('form').submit(function() {
+    event.preventDefault();
+  });
 });
