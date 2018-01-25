@@ -1,11 +1,8 @@
-$(document).ready(function () {
+$(document).ready(function() {
   var navTopOffset = $('nav').offset().top;
 
-  // $(window).trigger('scroll');
-
   // On Window Scroll
-
-  $(window).on('scroll load', function () {
+  $(window).on('scroll load', function() {
     // The mouse was scolled up.
     // Remove fixed-bottom class from the nav if it exists.
     if ($('nav').hasClass('fixed-bottom')) {
@@ -37,5 +34,10 @@ $(document).ready(function () {
         $('nav').addClass('fixed-bottom');
       }
     }
+  });
+
+  // Nav Item Clicked
+  $('#navbar-collapse').click(function() {
+    $(window).trigger('scroll');
   });
 });
