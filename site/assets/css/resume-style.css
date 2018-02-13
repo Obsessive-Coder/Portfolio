@@ -1,8 +1,30 @@
+body {
+  color: #446e91;
+  padding: 0 150px;
+}
+
+a,
+.info-list>li>p {
+  text-decoration: none;
+  color: #446e91;
+}
+
+p {
+  color: #000;
+}
+
 .info-list,
 .info-list li>ul {
   list-style: none;
 }
 
-.info-list>li {
-  margin: 0 0.5rem;
+.info-list>li>p,
+.info-list>li>ul>li>a {
+  font-size: 0.75rem;
+}
+
+.info-list>li>p {
+  /* display: inline-block; */
+  padding: 0 0.5rem;
+  border-right: thin solid #446e91;
 }
