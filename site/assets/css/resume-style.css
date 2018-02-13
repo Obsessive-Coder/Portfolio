@@ -1,0 +1,8 @@
+.info-list,
+.info-list li>ul {
+  list-style: none;
+}
+
+.info-list>li {
+  margin: 0 0.5rem;
+}
