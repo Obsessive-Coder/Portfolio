@@ -3,14 +3,31 @@ body {
   padding: 0 150px;
 }
 
-a,
-.info-list>li>p {
+body>section,
+header {
+  margin-top: 50px;
+}
+
+header>div>p:first-child {
+  margin-bottom: 0;
+}
+
+a {
   text-decoration: none;
   color: #446e91;
 }
 
-p {
+ul {
+  margin: 0;
+}
+
+p,
+li {
   color: #000;
+}
+
+li {
+  font-size: 0.9rem;
 }
 
 .info-list,
@@ -27,4 +44,8 @@ p {
   /* display: inline-block; */
   padding: 0 0.5rem;
   border-right: thin solid #446e91;
+}
+
+.job-info {
+  font-size: 0.75rem;
 }
