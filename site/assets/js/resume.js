@@ -21,7 +21,6 @@ $(document).ready(function() {
       'Asp.Net',
       'Visusal Studio',
       'Android Studio',
-      'Project Management',
       'Project Planning',
       'Requirements Gathering'
   ];
