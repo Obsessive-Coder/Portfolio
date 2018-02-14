@@ -89,12 +89,35 @@ $(document).ready(function() {
   }
 
   function showJobs() {
-    var jobLists = $('.job-info');
-    jobLists.each(function(index) {
-      for (let i = 0; i < jobs.length; i++) {
-        jobLists.append(listItemHTML.replace('[CONTENT]', jobs[index][i]));
+    showTaSkills();
+    showTutorSkills();
+    showRooferSkills();
+    showCookSkills();
+
+    function showTaSkills() {
+      for (var i = 0; i < jobs[0].length; i++) {
+        $('#ta-skills').append(listItemHTML.replace('[CONTENT]', jobs[0][i]));;
       }
-    });
+
+    }
+
+    function showTutorSkills() {
+      for (var i = 0; i < jobs[1].length; i++) {
+        $('#tutor-skills').append(listItemHTML.replace('[CONTENT]', jobs[1][i]));;
+      }
+    }
+
+    function showRooferSkills() {
+      for (var i = 0; i < jobs[2].length; i++) {
+        $('#roofer-skills').append(listItemHTML.replace('[CONTENT]', jobs[2][i]));;
+      }
+    }
+
+    function showCookSkills() {
+      for (var i = 0; i < jobs[3].length; i++) {
+        $('#cook-skills').append(listItemHTML.replace('[CONTENT]', jobs[3][i]));;
+      }
+    }
   }
 
   showSkills();
