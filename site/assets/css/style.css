@@ -46,9 +46,11 @@ body {
 /* Bio Section */
 
 .bio-pic {
-  position: relative;
-  max-height: 400px;
-  max-width: 400px;
+  position: absolute;
+  top: -30%;
+  left: 55%;
+  max-height: 350px;
+  max-width: 350px;
 }
 
 .bio-pic-shadow {
@@ -77,7 +79,7 @@ body {
 
 .bio-pic ul li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 50px;
 }
 
 .bio-pic ul li a {
@@ -100,12 +102,12 @@ body {
 }
 
 .bio-section {
-  width: 75%;
+  width: 70%;
 }
 
 .bio-section h3 {
   letter-spacing: 0.5rem;
-  margin: 15px auto 0 auto;
+  /* margin: 15px auto 0 auto; */
 }
 
 .bio-section span {
@@ -116,12 +118,25 @@ body {
 
 .bio-section p {
   font-size: 0.95rem;
-  padding: 10px 15px;
-  line-height: 90%;
-  text-align: justify;
+  /* padding: 10px 15px; */
+  /* line-height: 90%; */
+  /* text-align: right; */
+  /* width: 60%; */
+}
+
+.bio-section .bio-text-intro {
+  padding-right: 43%;
+}
+
+.bio-section .bio-text-more {
+  padding-right: 39%;
 }
 
 /* Project Section */
+
+.project-items .card {
+  box-shadow: 7px 7px 13px #888;
+}
 
 .project-items .card,
 .project-items .card img,
@@ -133,16 +148,27 @@ body {
   margin-bottom: 3em;
 }
 
-.project-items .card .card-img-overlay ul li small {
+.project-items .card .card-img-overlay ul li,
+.project-items .card .card-img-overlay .card-text {
   visibility: hidden;
+  display: inline;
+  margin: auto 10px;
 }
 
 .project-items .card:hover .card-img-overlay {
-  box-shadow: inset 0px 0px 0px 200px rgba(17, 17, 17, 0.80);
+  box-shadow: inset 0px 0px 0px 200px rgba(17, 17, 17, 0.6);
+  transition: all 0.5s ease-in-out;
 }
 
-.project-items .card:hover .card-img-overlay ul li small {
+.project-items .card:hover .card-img-overlay ul li,
+.project-items .card:hover .card-img-overlay .card-text {
   visibility: visible;
+  transition: all 0.75s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 3px 3px lightblue;
+  transition: all 0.5s ease-in-out;
 }
 
 /* Contact Section */
