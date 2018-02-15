@@ -225,6 +225,7 @@ h3 {
   left: 35%;
   color: lightblue;
   z-index: -10000000;
+  opacity: 0.4;
 }
 
 .social-links li a {
