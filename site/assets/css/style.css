@@ -1,5 +1,27 @@
+/* .text-vertical is from stack overflow */
+
+.text-vertical {
+  width: 1px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  line-height: 1.25rem;
+  color: #555;
+}
+
 body {
   font-size: 100%;
+  padding-bottom: 150px;
+}
+
+h1,
+h2 {
+  color: #444;
+}
+
+h3 {
+  color: #555;
 }
 
 .main-header {
@@ -45,12 +67,32 @@ body {
 
 /* Bio Section */
 
+.bio-description {
+  /* border: thin solid #999; */
+  box-shadow: 0 0 20px 0 #999;
+  background-color: rgba(200, 200, 200, 0.3);
+  /* width: 90%; */
+  padding: 20px;
+}
+
+.bio-description header {
+  width: 60%;
+}
+
+.bio-description h3 {
+  letter-spacing: 0.75rem;
+  /* width: 75%; */
+  /* margin: 15px auto 0 auto; */
+}
+
 .bio-pic {
   position: absolute;
-  top: -30%;
-  left: 55%;
+  top: -15%;
+  left: 59%;
   max-height: 350px;
   max-width: 350px;
+  box-shadow: -5px 5px 20px 3px #555;
+  transition: all 0.5s ease-in-out;
 }
 
 .bio-pic-shadow {
@@ -61,17 +103,13 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.bio-pic img {
-  box-shadow: 0 0 10px 5px lightblue;
-  transition: all 0.5s ease-in-out;
-}
-
 .bio-pic ul {
   position: absolute;
   top: 50%;
   left: 0;
   list-style: none;
-  width: 100%;
+  width: 90%;
+  margin: auto;
   opacity: 0;
   transition: all 0.5s ease-in-out;
   visibility: hidden;
@@ -88,8 +126,18 @@ body {
   text-decoration: none;
 }
 
+.bio-pic ul li a:hover {
+  color: lightblue;
+}
+
 .bio-pic:hover img {
-  box-shadow: 0 0 20px 10px lightblue;
+  box-shadow: 0 0 30px 10px lightblue;
+  transition: all 0.5s ease-in-out;
+}
+
+.bio-pic:hover {
+  box-shadow: none;
+  transition: all 0.5s ease-in-out;
 }
 
 .bio-pic:hover .bio-pic-shadow {
@@ -99,37 +147,15 @@ body {
 .bio-pic:hover ul {
   opacity: 1;
   visibility: visible;
+  transition: all 0.5s ease-in-out;
 }
 
-.bio-section {
-  width: 70%;
+.bio-description .bio-text {
+  width: 60%;
 }
 
-.bio-section h3 {
-  letter-spacing: 0.5rem;
-  /* margin: 15px auto 0 auto; */
-}
-
-.bio-section span {
-  font-size: 1.25rem;
-  font-weight: bold;
-  letter-spacing: 0.4rem;
-}
-
-.bio-section p {
-  font-size: 0.95rem;
-  /* padding: 10px 15px; */
-  /* line-height: 90%; */
-  /* text-align: right; */
-  /* width: 60%; */
-}
-
-.bio-section .bio-text-intro {
-  padding-right: 43%;
-}
-
-.bio-section .bio-text-more {
-  padding-right: 39%;
+.bio-description .bio-text-more {
+  width: 63%;
 }
 
 /* Project Section */
@@ -157,12 +183,13 @@ body {
 
 .project-items .card:hover .card-img-overlay {
   box-shadow: inset 0px 0px 0px 200px rgba(17, 17, 17, 0.6);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 
 .project-items .card:hover .card-img-overlay ul li,
 .project-items .card:hover .card-img-overlay .card-text {
   visibility: visible;
+  /* transition: all 0.75s ease-in-out; */
   transition: all 0.75s ease-in-out;
 }
 
@@ -173,15 +200,31 @@ body {
 
 /* Contact Section */
 
-.personal-info {
-  font-size: 18px;
-  letter-spacing: 3px;
-  margin-bottom: 25px;
+.contact-info>p {
+  letter-spacing: 1rem;
+  line-height: 1.5rem;
+  font-size: 2.5rem;
 }
 
-.personal-info span {
-  color: #777;
-  line-height: 28px;
+.phone-info>p {
+  letter-spacing: 1rem;
+  line-height: 0;
+  font-size: 2rem;
+}
+
+.contact-info>a {
+  text-decoration: none;
+  font-size: 1.75rem;
+  letter-spacing: 0.2rem;
+  line-height: 1rem;
+}
+
+.icon-at {
+  position: absolute;
+  top: -2%;
+  left: 35%;
+  color: lightblue;
+  z-index: -10000000;
 }
 
 .social-links li a {

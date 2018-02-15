@@ -1,169 +1,447 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Software Developer Resume">
+    <meta name="description" content="Jared Huffstutler provides quality software that adheres to current industry standard best practices.  He offers mobile responsive websites, android apps, and windows applicatons.">
     <meta name="author" content="Jared Huffstutler">
 
     <title>Jared Huffstutler</title>
+
+    <!-- Material Icons CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Site CSS -->
-    <link rel="stylesheet" href="assets/css/resume-style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
-  <body>
-    <div class="container-fluid">
-      <header class="clearfix text-center">
-        <h1 class="float-md-right">
-          Jared Huffstutler
-        </h1>
-        <div>
-          <ul class="d-inline-flex justify-content-end w-100 info-list">
-            <li class="pt-2">
-              <p>Frontend Software Engineer</p>
+  <body class="text-center">
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="header-image"></div>
+      <nav class="navbar navbar-expand-md site-nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="material-icons md-48">menu</i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="navbar-nav m-auto justify-content-around align-items-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
             </li>
-            <li class="pt-2">
-              <p>Tucson, AZ 85730</p>
+            <li class="nav-item">
+              <a class="nav-link" href="#bio">Bio</a>
             </li>
-            <li class="pt-2">
-              <p>(520) 975-0742</p>
+            <li class="nav-item">
+              <img class="img-responsive img-circle" src="assets/images/menu-logo.jpg" alt="menu logo">
             </li>
-            <li>
-              <ul class="text-left">
-                <li>
-                  <a href="#">jaredhuffstutler@email.arizona.edu</a>
-                </li>
-                <li>
-                  <a href="#">jaredhuff85@gmail.com</a>
-                </li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
-          <!-- Shown only when printed -->
-          <p class="text-dark">jaredhuffstutler.com</p>
         </div>
-      </header>
-      <!-- Main Content  -->
-      <main>
-        <!-- Professional Summary -->
-        <section>
-          <header>
-            <h2>Professional Summary</h2>
-          </header>
-          <div>
-            <p>
-              Obsessively passionate Web Developer with 3 years of experience in frontend web development. A self-taught programmer with more than 5 years of experience in software development, and knowledgeable about the concepts of the Software Development Life-Cycle.
-            </p>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container-fluid">
+      <!-- Bio Section -->
+      <section id="bio" class="main-section">
+        <header class="">
+          <h1>What's Up With
+            <em>This</em> Guy?
+          </h1>
+          <h2>expect more</h2>
+        </header>
+        <div class="container-fluid">
+          <div class="row section-content">
+            <!-- Skills -->
+            <div class="col-4" style="margin-top: -75px;">
+              <!-- Web Development Skills -->
+              <div>
+                <header class="border-bottom border-light">
+                  <h3>Web Development</h3>
+                </header>
+                <div class="d-flex justify-content-around text-muted">
+                  <ul class="fa-ul">
+                    <li class="fa-li">
+                      <small>HTML5</small>
+                    </li>
+                    <li class="fa-li">
+                      <small>CSS3</small>
+                    </li>
+                    <li class="fa-li">
+                      <small>JavaScript</small>
+                    </li>
+                    <li class="fa-li">
+                      <small>Bootstrap</small>
+                    </li>
+                    <li class="fa-li">
+                      <small>jQuery</small>
+                    </li>
+                    <li class="fa-li">
+                      <small>NodeJS</small>
+                    </li>
+                  </ul>
+                  <ul class="fa-ul">
+                    <li class="fa-li">
+                      <small>VB.NET</small>
+                    </li>
+                    <li class="fa-li">
+                      <small>Visual Studio</small>
+                    </li>
+                    <li class="fa-li">
+                      <small>MYSQL</small>
+                    </li>
+                    <li class="fa-li">
+                      <small>Git</small>
+                    </li>
+                    <li class="fa-li">
+                      <small>AJAX</small>
+                    </li>
+                    <li class="fa-li">
+                      <small>JSON</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <hr>
+
+              <!-- SDLC Skills -->
+              <div>
+                <header class="border-bottom border-light">
+                  <h3>Software Development</h3>
+                </header>
+                <div class="d-flex justify-content-around text-muted">
+                  <ul class="fa-ul">
+                    <li class="fa-li">
+                      <small>Project Planning</small>
+                    </li>
+                    <li class="fa-li">
+                      <small>Requirements Gathering</small>
+                    </li>
+                    <li class="fa-li">
+                      <small>Time Management</small>
+                    </li>
+                  </ul>
+                  <ul class="fa-ul">
+                    <li class="fa-li">
+                      <small>SDLC</small>
+                    </li>
+                    <li class="fa-li">
+                      <small>Critical Thinking</small>
+                    </li>
+                    <li class="fa-li">
+                      <small>Problem Solving</small>
+                    </li>
+                    <li class="fa-li">
+                      <small>Agile</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <div class="col-8">
+              <!-- <div class="rounded"> -->
+              <!-- Description -->
+              <section class="px-5 text-right bio-section">
+                <div class="bio-description">
+                  <header>
+                    <h3>Jared</br>Huffstutler</h3>
+                    <p class="pr-3 text-muted">Self-Taught Web Developer</p>
+                  </header>
+                  <p class="bio-text">
+                    Obsessively passionate programmer with an insatiable appetite for learning and improvement.
+                  </p>
+                  <!-- </p> -->
+                  <!-- <p class="bio-text-more"> -->
+                  <p class="bio-text-more">
+                    3 years of web development experience. 5 years of experience in software development practices.
+                  </p>
+                  <!-- <p class=""> -->
+                  <p class="w-75">
+                    I have also learned non technical skills which include critical thinking, problem solving, time management, and handling failure and setback.
+                  </p>
+                </div>
+                <!-- Image and Social Links -->
+                <div class="rounded-circle bio-pic">
+                  <img class="img-fluid rounded-circle" src="assets/images/me.jpg" alt="Bio picture">
+                  <div class="rounded-circle bio-pic-shadow">
+                  </div>
+                  <ul class="fa-ul">
+                    <li class="fa-li">
+                      <a href="https://github.com/jaredhuff" target="_blank" rel="noopener">
+                        <i class="fab fa-github-alt"></i>
+                      </a>
+                    </li>
+                    <li class="fa-li">
+                      <a href="https://www.linkedin.com/in/jared-huffstutler/" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <!-- </div> -->
+            </div>
           </div>
-        </section>
-        <!-- Skills -->
-        <section>
-          <header>
-            <h2>Skills</h2>
-          </header>
-          <div class="container-fluid">
-            <div class="row skills-container">
-              <div class="col-md-6">
-                <!-- Left Skills List -->
-                <ul>
-                  <!-- list of skills populated with jQuery -->
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="main-section">
+        <header>
+          <h1>Has He Done Anything?</h1>
+          <h2>pursue excellence</h2>
+        </header>
+        <div class="container-fluid">
+          <div class="row section-content project-items">
+            <!-- Software Development Portfolio -->
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <!-- Project Card -->
+              <div class="card text-white">
+                <img class="card-img img-fluid" src="http://via.placeholder.com/200x200" alt="project photo">
+                <div class="card-img-overlay">
+                  <h4 class="card-title">Software Developer Portfolio</h4>
+                  <ul class="fa-ul project-info">
+                    <li class="fa-li">
+                      <i class="fab fa-html5"></i>
+                    </li>
+                    <li class="fa-li">
+                      <i class="fab fa-css3"></i>
+                    </li>
+                    <li class="fa-li">
+                      <i class="fab fa-js-square"></i>
+                    </li>
+                  </ul>
+                  <p class="card-text">
+                    short description...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Battleship -->
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <!-- Project Card -->
+              <div class="card text-white">
+                <img class="card-img img-fluid" src="http://via.placeholder.com/200x200" alt="project photo">
+                <div class="card-img-overlay">
+                  <h4 class="card-title">Battleship Clone</h4>
+                  <ul class="fa-ul project-info">
+                    <li class="fa-li">
+                      <i class="fas fa-code"></i>
+                    </li>
+                    <li class="fa-li">
+                      <i class="fas fa-gamepad"></i>
+                    </li>
+                  </ul>
+                  <p class="card-text">
+                    short description...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <!-- Project Card -->
+
+              <div class="card text-white">
+                <img class="card-img img-fluid" src="http://via.placeholder.com/200x200" alt="project photo">
+                <div class="card-img-overlay">
+                  <h4 class="card-title">SpitFace</h4>
+                  <p class="card-text">
+                    short description...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <!-- Project Card -->
+
+              <div class="card text-white">
+                <img class="card-img img-fluid" src="http://via.placeholder.com/200x200" alt="project photo">
+                <div class="card-img-overlay">
+                  <h4 class="card-title">Paycheck Calculator</h4>
+                  <ul class="fa-ul project-info">
+                    <li class="fa-li">
+                      <i class="fas fa-code"></i>
+                    </li>
+                    <li class="fa-li">
+                      <i class="fab fa-windows"></i>
+                    </li>
+                  </ul>
+                  <p class="card-text">
+                    short description...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <!-- Project Card -->
+
+              <div class="card text-white">
+                <img class="card-img img-fluid" src="http://via.placeholder.com/200x200" alt="project photo">
+                <div class="card-img-overlay">
+                  <h4 class="card-title">Artist Name Extractor</h4>
+                  <ul class="fa-ul project-info">
+                    <li class="fa-li">
+                      <i class="fas fa-code"></i>
+                    </li>
+                    <li class="fa-li">
+                      <i class="fab fa-windows"></i>
+                    </li>
+                  </ul>
+                  <p class="card-text">
+                    short description...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <!-- Project Card -->
+
+              <div class="card text-white">
+                <img class="card-img img-fluid" src="http://via.placeholder.com/200x200" alt="project photo">
+                <div class="card-img-overlay">
+                  <h4 class="card-title">Duplicate File Founder</h4>
+                  <ul class="fa-ul project-info">
+                    <li class="fa-li">
+                      <i class="fas fa-code"></i>
+                    </li>
+                    <li class="fa-li">
+                      <i class="fab fa-windows"></i>
+                    </li>
+                  </ul>
+                  <p class="card-text">
+                    short description...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="main-section">
+        <header>
+          <h1>Let's Work Together</h1>
+          <h2>always prepared</h2>
+        </header>
+        <div class="container-fluid">
+          <div class="row section-content">
+            <!-- Contact Information -->
+            <div class="col-5 text-left" style="margin-top: -75px;">
+              <div class="row pr-5">
+                <div class="col-2">
+                  <p class="text-vertical">Locale</p>
+                </div>
+                <div class="col-10">
+                  <div class="d-flex flex-column justify-content-center h-100 text-muted contact-info">
+                    <p class="text-right">Tucson</p>
+                    <p>Arizona</p>
+                  </div>
+                </div>
+              </div>
+              </br>
+              <div class="row pr-5">
+                <div class="col-2">
+                  <p class="text-vertical">Email</p>
+                </div>
+                <div class="col-10">
+                  <div class="d-flex flex-column justify-content-center h-100 contact-info">
+                    <a class="text-muted" href="#">
+                      <p>jaredhuffstutler</p>
+                      <i class="fas fa-at fa-4x icon-at"></i>
+                      <p class="text-right">email.arizona.edu</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              </br>
+              <div class="row pr-5">
+                <div class="col-2">
+                  <p class="text-vertical">Phone</p>
+                </div>
+                <div class="col-10">
+                  <div class="d-flex flex-column justify-content-center px-2 h-100 text-center text-muted phone-info">
+                    <p class="text-left">520</p>
+                    <p class="mr-4 pr-2">975</p>
+                    <p class="text-right">0742</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Social Media Links -->
+              <div class="container-fluid">
+                <ul class="fa-ul d-flex justify-content-around social-links">
+                  <!-- GitHub -->
+                  <!-- <li class="fa-li">
+                    <a class="rounded-circle" href="https://github.com/Obsessive-Coder" target="_blank">
+                      <i class="fab fa-github-alt"></i>
+                    </a>
+                  </li> -->
+                  <!-- LinkedIn -->
+                  <!-- <li class="fa-li">
+                    <a class="rounded-circle" href="https://www.linkedin.com/in/jared-huffstutler" target="_blank">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li> -->
                 </ul>
               </div>
-              <div class="col-md-6">
-                <!-- Right Skills List -->
-                <ul>
-                  <!-- list of skills populated with jQuery -->
-                </ul>
-              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-7 text-left">
+              <form class="needs-validation" action="index.html" method="post" novalidate>
+                <!-- Name -->
+                <div class="form-group">
+                  <label class="form-label-lg sr-only" for="name">Name</label>
+                  <input class="form-control form-control-lg rounded" type="text" id="name" name="name" placeholder="Your name here..." required>
+                  <div class="invalid-tooltip">
+                    I should know who I'll be talking to.
+                  </div>
+                </div>
+                <!-- Email Address -->
+                <div class="form-group">
+                  <label class="form-label-lg sr-only" for="email">Email Address</label>
+                  <input class="form-control form-control-lg rounded" type="email" id="email" name="email" placeholder="Your email address here..." required>
+                  <div class="invalid-tooltip">
+                    I need a way to contact you.
+                  </div>
+                </div>
+                <!-- Messege -->
+                <div class="form-group">
+                  <label class="form-label-lg sr-only" for="message">Message</label>
+                  <textarea class="form-control form-control-lg rounded" name="message" placeholder="Your messege here..." rows="5"></textarea>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-10 text-center">
+                    <!-- Validation Message -->
+                  </div>
+                  <div class="col-2">
+                    <button class="btn btn-outline-primary btn-lg rounded" type="submit" name="submit">Send It</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-        </section>
-        <!-- Additional Information -->
-        <section>
-          <header>
-            <h2>Additional Information</h2>
-          </header>
-          <div>
-            <ul id="additionals-list">
-              <!-- list of additional information populated with jQuery -->
-            </ul>
-          </div>
-        </section>
-        <!-- Work History -->
-        <section>
-          <header>
-            <h2>Work History</h2>
-          </header>
-          <!-- Teaching Assistant -->
-          <section>
-            <header class="mt-2">
-              <h3>Teaching Assistant - Web Development</h3>
-              <div>
-                <p>University of Arizona</p>
-                <p>Current</p>
-              </div>
-            </header>
-            <!-- List of Skills, Traits, and Achievements -->
-            <div>
-              <ul id="ta-skills">
-                <!-- list of job info populated with jQuery -->
-              </ul>
-            </div>
-          </section>
-          <!-- Wed Development Tutor -->
-          <section>
-            <header>
-              <h3>Tutor - Web Development</h3>
-              <div>
-                <p>Trilogy Education Services</p>
-                <p>Current</p>
-              </div>
-            </header>
-            <div>
-              <ul id="tutor-skills">
-                <!-- list of job info populated with jQuery -->
-              </ul>
-            </div>
-          </section>
-          <!-- Roofer -->
-          <section>
-            <header>
-              <h3>Roofer</h3>
-              <div>
-                <p>Various Employers</p>
-                <p>10 years</p>
-              </div>
-            </header>
-            <div>
-              <ul id="roofer-skills">
-                <!-- list of job info populated with jQuery -->
-              </ul>
-            </div>
-          </section>
-          <!-- Cook -->
-          <section>
-            <header>
-              <h3>Cook</h3>
-              <div>
-                <p>Various Employers</p>
-                <p>5 years</p>
-              </div>
-            </header>
-            <div>
-              <ul id="cook-skills">
-                <!-- list of job info populated with jQuery -->
-              </ul>
-            </div>
-          </section>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+    </main>
 
     <!-- ***** Scripts ***** -->
     <!-- jQuery JS -->
@@ -173,7 +451,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Main JS -->
-    <script src="assets/js/resume.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 
 </html>
