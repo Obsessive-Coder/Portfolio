@@ -20,12 +20,9 @@ h2 {
   color: #444;
 }
 
-h3 {
+h3,
+h4 {
   color: #555;
-}
-
-.main-header {
-  /* margin-bottom: 40px; */
 }
 
 .header-image {
@@ -36,10 +33,16 @@ h3 {
 
 .main-section {
   padding-top: 100px;
+  text-align: left;
 }
 
 .section-content {
   padding-top: 40px;
+}
+
+.glow-shadow {
+  border-radius: 12px;
+  box-shadow: 0 0 20px 0 lightblue;
 }
 
 /* Site Navigation */
@@ -69,10 +72,10 @@ h3 {
 
 .bio-description {
   /* border: thin solid #999; */
-  box-shadow: 0 0 20px 0 #999;
-  background-color: rgba(200, 200, 200, 0.3);
+  /* box-shadow: 0 0 20px 0 #999; */
+  /* background-color: rgba(200, 200, 200, 0.3); */
   /* width: 90%; */
-  padding: 20px;
+  padding: 2%;
 }
 
 .bio-description header {
@@ -200,6 +203,10 @@ h3 {
 
 /* Contact Section */
 
+.contact-container {
+  margin-top: 50px;
+}
+
 .contact-info>p {
   letter-spacing: 1rem;
   line-height: 1.5rem;
@@ -212,7 +219,7 @@ h3 {
   font-size: 2rem;
 }
 
-.contact-info>a {
+.email-info>p {
   text-decoration: none;
   font-size: 1.75rem;
   letter-spacing: 0.2rem;
@@ -221,19 +228,27 @@ h3 {
 
 .icon-at {
   position: absolute;
-  top: -2%;
-  left: 35%;
+  left: 30%;
   color: lightblue;
   z-index: -10000000;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
-.social-links li a {
+.social-links a {
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  font-size: 50px;
-  line-height: 100px;
+  /* width: 150px;
+  height: 150px; */
+  font-size: 5rem;
+  color: lightblue;
+  /* line-height: 100px; */
+}
+
+.social-links .fa-github-alt:hover {
+  color: #4078c0;
+}
+
+.social-links .fa-linkedin:hover {
+  color: #0077B5;
 }
 
 form .form-group {
@@ -253,4 +268,13 @@ form .form-row button {
 form .form-group input:focus,
 form .form-group textarea:focus {
   box-shadow: 7px 7px 13px #888;
+}
+
+@media screen and (min-width: 992px) {
+  .skill-container {
+    margin-top: -75px;
+  }
+  .contact-container {
+    margin-top: -75px;
+  }
 }
