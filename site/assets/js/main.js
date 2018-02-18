@@ -44,5 +44,27 @@ $(document).ready(function() {
   // Contact Form Submitted
   $('form').submit(function() {
     event.preventDefault();
+
+    var params = $('form').serializeArray().reduce(function(obj, item) {
+      obj[item.name] = item.value;
+      return obj;
+    }, {});
+
+    var idService = "default_service";
+    var idTemplate = "request_for_proposal";
+
+    var submitButton = $('form').find("#submit");
+
+    submitButton.text("Sending It...");
+
+    emailjs.send(idService, idTemplate, params)
+      .then(function() {
+        // CreateStatusAlert("alert-success");
+        submitButton.text("Send It");
+      }, function(err) {
+        console.log("Send email failed!\r\n Response:\n" + JSON.stringify(err));
+        // CreateStatusAlert("alert-warning");
+        submitButton.text("Send It");
+      });
   });
 });

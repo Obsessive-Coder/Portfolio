@@ -75,7 +75,7 @@ h4 {
   /* box-shadow: 0 0 20px 0 #999; */
   /* background-color: rgba(200, 200, 200, 0.3); */
   /* width: 90%; */
-  padding: 2%;
+  /* padding: 2%; */
 }
 
 .bio-description header {
@@ -86,6 +86,15 @@ h4 {
   letter-spacing: 0.75rem;
   /* width: 75%; */
   /* margin: 15px auto 0 auto; */
+}
+
+.bio-description .bio-text,
+.bio-description .bio-text-more {
+  width: 61%;
+}
+
+.bio-description .bio-text-most {
+  width: 70%;
 }
 
 .bio-pic {
@@ -153,18 +162,11 @@ h4 {
   transition: all 0.5s ease-in-out;
 }
 
-.bio-description .bio-text {
-  width: 60%;
-}
-
-.bio-description .bio-text-more {
-  width: 63%;
-}
-
 /* Project Section */
 
 .project-items .card {
-  box-shadow: 7px 7px 13px #888;
+  box-shadow: 5px 5px 10px #888;
+  text-align: center;
 }
 
 .project-items .card,
@@ -215,7 +217,7 @@ h4 {
 
 .phone-info>p {
   letter-spacing: 1rem;
-  line-height: 0;
+  line-height: 1rem;
   font-size: 2rem;
 }
 
@@ -270,11 +272,33 @@ form .form-group textarea:focus {
   box-shadow: 7px 7px 13px #888;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
   .skill-container {
     margin-top: -75px;
   }
   .contact-container {
     margin-top: -75px;
+  }
+  .bio-description .bio-text {
+    width: 63%;
+  }
+  .bio-description .bio-text-more {
+    width: 70%;
+  }
+  .bio-description .bio-text-most {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bio-description .bio-text,
+  .bio-description .bio-text-more {
+    text-align: left;
+  }
+  .bio-description .bio-text {
+    width: 65%;
+  }
+  .bio-description .bio-text-more {
+    width: 100%;
   }
 }
