@@ -313,14 +313,32 @@ form .form-group textarea:focus {
 }
 
 @media screen and (max-width: 576px) {
-  .bio-description .bio-text,
-  .bio-description .bio-text-more {
+  .main-section {
+    padding-top: 20px
+  }
+  .main-section header {
+    margin-bottom: 20px;
+  }
+  .section-content {
+    padding-top: 10px;
+  }
+  .bio-description {
     text-align: left;
   }
+  .bio-description .bio-text,
+  .bio-description .bio-text-more,
+  .bio-description .bio-text-most {
+    margin-left: ;
+  }
   .bio-description .bio-text {
-    width: 65%;
+    /* width: 65%; */
   }
   .bio-description .bio-text-more {
-    width: 100%;
+    /* width: 100%; */
+  }
+  .bio-pic {
+    top: 30px;
+    /* max-height: 150px;
+    max-width: 150px; */
   }
 }
