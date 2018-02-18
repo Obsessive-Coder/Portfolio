@@ -209,7 +209,7 @@ h4 {
   margin-top: 50px;
 }
 
-.contact-info>p {
+.address-info>p {
   letter-spacing: 1rem;
   line-height: 1.5rem;
   font-size: 2.5rem;
@@ -287,6 +287,28 @@ form .form-group textarea:focus {
   }
   .bio-description .bio-text-most {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site-nav {
+    font-size: 1rem;
+    /* z-index: 1000; */
+  }
+  .site-nav .navbar-collapse .navbar-nav li {
+    margin: 0 2rem;
+  }
+  .site-nav .navbar-collapse .navbar-nav li a {
+    letter-spacing: 8px;
+  }
+  .bio-description {
+    width: 95%;
+  }
+  .bio-description .bio-text-most {
+    width: 75%;
+  }
+  .contact-info {
+    margin: auto 25%;
   }
 }
 
