@@ -70,12 +70,8 @@ h4 {
 
 /* Bio Section */
 
-.bio-description {
-  /* border: thin solid #999; */
-  /* box-shadow: 0 0 20px 0 #999; */
-  /* background-color: rgba(200, 200, 200, 0.3); */
-  /* width: 90%; */
-  /* padding: 2%; */
+.skill-container ul li {
+  width: 100%;
 }
 
 .bio-description header {
