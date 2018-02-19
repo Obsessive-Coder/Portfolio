@@ -163,6 +163,7 @@ h4 {
 .project-items .card {
   box-shadow: 5px 5px 10px #888;
   text-align: center;
+  transition: all 1s ease-in-out;
 }
 
 .project-items .card,
@@ -175,28 +176,37 @@ h4 {
   margin-bottom: 3em;
 }
 
+.project-items .card .card-img-overlay .card-text {
+  position: relative;
+  top: -45px;
+}
+
 .project-items .card .card-img-overlay ul li,
+.project-items .card .card-img-overlay .card-title,
 .project-items .card .card-img-overlay .card-text {
   visibility: hidden;
   display: inline;
   margin: auto 10px;
+  color: lightblue;
+  transition: all 1s ease-in-out;
 }
 
 .project-items .card:hover .card-img-overlay {
-  box-shadow: inset 0px 0px 0px 200px rgba(17, 17, 17, 0.6);
-  transition: all 0.75s ease-in-out;
+  box-shadow: inset 0px 0px 0px 200px rgba(5, 5, 5, 0.8);
+  transition: all 1s ease-in-out;
 }
 
 .project-items .card:hover .card-img-overlay ul li,
+.project-items .card:hover .card-img-overlay .card-title,
 .project-items .card:hover .card-img-overlay .card-text {
   visibility: visible;
   /* transition: all 0.75s ease-in-out; */
-  transition: all 0.75s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .card:hover {
   box-shadow: 0 0 3px 3px lightblue;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 /* Contact Section */
@@ -266,6 +276,24 @@ form .form-row button {
 form .form-group input:focus,
 form .form-group textarea:focus {
   box-shadow: 7px 7px 13px #888;
+}
+
+form .form-row button {
+  background-color: #fff;
+  color: lightblue;
+  box-shadow: 0 0 5px 1px lightblue;
+}
+
+form .form-row button:hover,
+form .form-row button:active {
+  background-color: lightblue;
+  /* border-color: lightblue; */
+  color: #fff;
+}
+
+form .form-row button:visited {
+  border: think solid lightblue;
+  color: #fff;
 }
 
 @media screen and (max-width: 992px) {

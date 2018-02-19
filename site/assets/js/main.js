@@ -1,9 +1,11 @@
 $(document).ready(function() {
   // Store the position of the nav.
   var navTopOffset = $('nav').offset().top;
+  var animatableElements = $('.main-section');
+  var win = $(window);
 
   // On Window Scroll And Load
-  $(window).on('scroll load', function() {
+  win.on('scroll resize load', function() {
     // Remove fixed-bottom class from the nav if it exists.
     if ($('nav').hasClass('fixed-bottom')) {
       $('nav').removeClass('fixed-bottom');
@@ -32,6 +34,22 @@ $(document).ready(function() {
         $('nav').addClass('fixed-bottom');
       }
     }
+
+    var windowHeight = win.height();
+    var windowTopPosition = win.scrollTop();
+    var windowBottomPosition = (windowTopPosition + windowHeight);
+
+    // Anamite when in viewport
+    animatableElements.each(function(val) {
+      var height = val.outerHeight();
+      var topPosition = val.offset().top;
+      var bottomPosition = topPosition + height;
+
+      if ((bottomPostion >= windowTopPosition) && (topPosition <= windowBottomPosition)) {
+        console.log("in view");
+      }
+    });
+
   });
 
   // Nav Item Clicked
