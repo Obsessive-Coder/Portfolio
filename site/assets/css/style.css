@@ -206,7 +206,7 @@ h4 {
 /* Contact Section */
 
 .contact-container {
-  margin-top: 50px;
+  margin-top: -75px;
 }
 
 .address-info>p {
@@ -273,12 +273,6 @@ form .form-group textarea:focus {
 }
 
 @media screen and (max-width: 992px) {
-  .skill-container {
-    margin-top: -75px;
-  }
-  .contact-container {
-    margin-top: -75px;
-  }
   .bio-description .bio-text {
     width: 63%;
   }
@@ -333,8 +327,8 @@ form .form-group textarea:focus {
   .bio-description .bio-text {
     /* width: 65%; */
   }
-  .bio-description .bio-text-more {
-    /* width: 100%; */
+  .bio-description .bio-text-most {
+    width: 90%;
   }
   .bio-pic {
     top: 30px;

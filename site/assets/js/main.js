@@ -67,4 +67,13 @@ $(document).ready(function() {
         submitButton.text("Send It");
       });
   });
+
+  function map(arr, callbackFunct) {
+    var newArr = {};
+    for (var i = 0; i < arr.length; i++) {
+      newArr.push(callbackFunct(arr[i]));
+    }
+    return newArr;
+  }
+
 });
