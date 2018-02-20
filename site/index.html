@@ -25,6 +25,7 @@
     <!-- Site CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Email JS -->
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
       (function() {
@@ -36,7 +37,7 @@
 
   <body class="text-center">
     <!-- Main Header -->
-    <header class="main-header">
+    <header id="home" class="main-header">
       <div class="header-image"></div>
       <nav class="navbar navbar-expand-md site-nav">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +47,7 @@
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="navbar-nav m-auto justify-content-around align-items-center">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#bio">Bio</a>
@@ -78,7 +79,7 @@
         <div class="container-fluid">
           <div class="row section-content">
             <!-- Skills -->
-            <div class="col-12 col-lg-4 mb-5 mb-sm-0 pt-3 glow-shadow skill-container">
+            <div class="animated col-12 col-lg-4 mb-5 mb-sm-0 pt-3 glow-shadow skill-container" data-animation="slideInLeft">
               <div class="row text-center">
                 <!-- Web Development Skills -->
                 <div class="col-6 col-lg-12">
