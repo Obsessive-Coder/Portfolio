@@ -52,7 +52,7 @@ h4 {
   border-color: #141414;
   box-shadow: 0 0.25rem 0.2rem 0.1rem lightblue;
   font-size: 1.5rem;
-  /* z-index: 1000; */
+  z-index: 100000000;
 }
 
 .site-nav .navbar-collapse .navbar-nav li {
@@ -68,6 +68,10 @@ h4 {
   color: lightblue;
 }
 
+.site-nav .navbar-collapse .navbar-nav li.active a {
+  color: lightblue;
+}
+
 /* Bio Section */
 
 .skill-container {
@@ -76,12 +80,6 @@ h4 {
 
 .skill-container ul li {
   width: 100%;
-}
-
-.skill-container ul li .animated {
-  animation-delay: 4s;
-  animation-duration: 2s;
-  /* animation-iteration-count: 5; */
 }
 
 .bio-description {
@@ -180,8 +178,6 @@ h4 {
   box-shadow: 5px 5px 10px #888;
   text-align: center;
   transition: all 1s ease-in-out;
-  /* visibility: hidden; */
-  /* animation-delay: 2s; */
 }
 
 .project-items .card,

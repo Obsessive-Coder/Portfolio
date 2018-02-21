@@ -98,9 +98,49 @@
   -webkit-animation-delay: 2s;
 }
 
+.delay-anim-2_1s {
+  animation-delay: 2.1s;
+  -webkit-animation-delay: 2.1s;
+}
+
+.delay-anim-2_2s {
+  animation-delay: 2.2s;
+  -webkit-animation-delay: 2.2s;
+}
+
+.delay-anim-2_3s {
+  animation-delay: 2.3s;
+  -webkit-animation-delay: 2.3s;
+}
+
+.delay-anim-2_4s {
+  animation-delay: 2.4s;
+  -webkit-animation-delay: 2.4s;
+}
+
 .delay-anim-2_5s {
   animation-delay: 2.5s;
   -webkit-animation-delay: 2.5s;
+}
+
+.delay-anim-2_6s {
+  animation-delay: 2.6s;
+  -webkit-animation-delay: 2.6s;
+}
+
+.delay-anim-2_7s {
+  animation-delay: 2.7s;
+  -webkit-animation-delay: 2.7s;
+}
+
+.delay-anim-2_8s {
+  animation-delay: 2.8s;
+  -webkit-animation-delay: 2.8s;
+}
+
+.delay-anim-2_9s {
+  animation-delay: 2.9s;
+  -webkit-animation-delay: 2.9s;
 }
 
 .delay-anim-3s {
@@ -108,14 +148,99 @@
   -webkit-animation-delay: 3s;
 }
 
+.delay-anim-3_1s {
+  animation-delay: 3.1s;
+  -webkit-animation-delay: 3.1s;
+}
+
+.delay-anim-3_2s {
+  animation-delay: 3.2s;
+  -webkit-animation-delay: 3.2s;
+}
+
+.delay-anim-3_3s {
+  animation-delay: 3.3s;
+  -webkit-animation-delay: 3.3s;
+}
+
+.delay-anim-3_4s {
+  animation-delay: 3.4s;
+  -webkit-animation-delay: 3.4s;
+}
+
+.delay-anim-3_5s {
+  animation-delay: 3.5s;
+  -webkit-animation-delay: 3.5s;
+}
+
+.delay-anim-3_6s {
+  animation-delay: 3.6s;
+  -webkit-animation-delay: 3.6s;
+}
+
+.delay-anim-3_7s {
+  animation-delay: 3.7s;
+  -webkit-animation-delay: 3.7s;
+}
+
+.delay-anim-3_8s {
+  animation-delay: 3.8s;
+  -webkit-animation-delay: 3.8s;
+}
+
+.delay-anim-3_9s {
+  animation-delay: 3.9s;
+  -webkit-animation-delay: 3.9s;
+}
+
 .delay-anim-4s {
   animation-delay: 4s;
   -webkit-animation-delay: 4s;
 }
 
+.delay-anim-4_1s {
+  animation-delay: 4.1s;
+  -webkit-animation-delay: 4.1s;
+}
+
+.delay-anim-4_2s {
+  animation-delay: 4.2s;
+  -webkit-animation-delay: 4.2s;
+}
+
+.delay-anim-4_3s {
+  animation-delay: 4.3s;
+  -webkit-animation-delay: 4.3s;
+}
+
+.delay-anim-4_4s {
+  animation-delay: 4.4s;
+  -webkit-animation-delay: 4.4s;
+}
+
 .delay-anim-4_5s {
   animation-delay: 4.5s;
   -webkit-animation-delay: 4.5s;
+}
+
+.delay-anim-4_6s {
+  animation-delay: 4.6s;
+  -webkit-animation-delay: 4.6s;
+}
+
+.delay-anim-4_7s {
+  animation-delay: 4.7s;
+  -webkit-animation-delay: 4.7s;
+}
+
+.delay-anim-4_8s {
+  animation-delay: 4.8s;
+  -webkit-animation-delay: 4.8s;
+}
+
+.delay-anim-4_9s {
+  animation-delay: 4.9s;
+  -webkit-animation-delay: 4.9s;
 }
 
 .delay-anim-5s {

@@ -24,6 +24,10 @@ $(document).ready(function() {
 
       if ((bottomPosition >= windowTopPosition + 300) && (topPosition <= windowBottomPosition - 300)) {
         if (!section.hasClass('in-view')) {
+          // Change the active nav item.
+          $('.nav-item').removeClass('active');
+          $('.nav-link[href="#' + section.attr('id') + '"]').parent().addClass('active');
+
           section.addClass('in-view');
 
           sectionElements.addClass(function(element) {
@@ -33,10 +37,10 @@ $(document).ready(function() {
           console.log('in view');
         }
       } else {
-        section.removeClass('in-view');
-        sectionElements.removeClass(function() {
-          return $(this).data('animation');
-        });
+        // section.removeClass('in-view');
+        // sectionElements.removeClass(function() {
+        //   return $(this).data('animation');
+        // });
       }
 
     });
@@ -45,20 +49,23 @@ $(document).ready(function() {
 
   // Nav Item Clicked
   $('.nav-link').click(function() {
+    // Set to true to prevent other animations.
     isAutoScrolling = true;
 
+    // Set timer for 1.25 second that will allow section animations.
     window.setTimeout(function() {
       isAutoScrolling = false;
     }, 1250);
+
+    // Change the active nav item.
+    $('.nav-item').removeClass('active');
+    $(this).parent().addClass('active');
 
     // Scroll the page to the section that was clicked in the navbar.
     var elementID = $(this).attr('href');
     $('html, body').animate({
       scrollTop: $(elementID).offset().top
-    }, 1500, function() {
-      // Animation complete.
-      // isAutoScrolling = false;
-    });
+    }, 1500);
   });
 
   // Contact Form Submitted
@@ -146,7 +153,7 @@ $(document).ready(function() {
   }
 
   // Main section elements used to trigger animations when the secion is in view.
-  var animatableElements = $('.main-section, .card');
+  var animatableElements = $('.main-header, .main-section');
 
   var isAutoScrolling = false;
   // Store the position of the nav.
