@@ -60,7 +60,7 @@ $(document).ready(function() {
     }, 1250);
 
     // Change the active nav item.
-    if ($(this).text() !== 'Resume') {
+    if (!$(this).parent().hasClass('resume-item')) {
       $('.nav-item').removeClass('active');
       $(this).parent().addClass('active');
     }

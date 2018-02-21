@@ -75,6 +75,7 @@ h4 {
 /* Bio Section */
 
 .skill-container {
+  margin-top: -75px;
   animation-duration: 1.5s;
 }
 
