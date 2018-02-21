@@ -70,8 +70,23 @@ h4 {
 
 /* Bio Section */
 
+.skill-container {
+  animation-duration: 1.5s;
+}
+
 .skill-container ul li {
   width: 100%;
+}
+
+.skill-container ul li .animated {
+  animation-delay: 4s;
+  animation-duration: 2s;
+  /* animation-iteration-count: 5; */
+}
+
+.bio-description {
+  animation-delay: 0.25s;
+  animation-duration: 3s;
 }
 
 .bio-description header {
@@ -101,6 +116,7 @@ h4 {
   max-width: 350px;
   box-shadow: -5px 5px 20px 3px #555;
   transition: all 0.5s ease-in-out;
+  animation-duration: 2.5s;
 }
 
 .bio-pic-shadow {
@@ -164,6 +180,8 @@ h4 {
   box-shadow: 5px 5px 10px #888;
   text-align: center;
   transition: all 1s ease-in-out;
+  /* visibility: hidden; */
+  /* animation-delay: 2s; */
 }
 
 .project-items .card,

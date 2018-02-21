@@ -4,8 +4,8 @@ $(document).ready(function() {
     // Set the positioning of the site navbar.
     controlNavbar();
 
-    function animateSection() {
-
+    if (isAutoScrolling) {
+      return false;
     }
 
     var windowHeight = $(window).height();
@@ -16,16 +16,15 @@ $(document).ready(function() {
     $.each(animatableElements, function() {
       var section = $(this);
 
-      if (!section.hasClass('in-view')) {
-        var height = section.outerHeight();
-        var topPosition = section.offset().top;
-        var bottomPosition = topPosition + height;
+      var height = section.outerHeight();
+      var topPosition = section.offset().top;
+      var bottomPosition = topPosition + height;
+      // var selector = '#' + section.attr('id') + ' .animated[data-animation]';
+      var sectionElements = $('#' + section.attr('id')).find('.animated');
 
-        if ((bottomPosition >= windowTopPosition) && (topPosition <= windowBottomPosition)) {
+      if ((bottomPosition >= windowTopPosition + 300) && (topPosition <= windowBottomPosition - 300)) {
+        if (!section.hasClass('in-view')) {
           section.addClass('in-view');
-
-          var selector = '#' + section.attr('id') + ' .animated[data-animation]';
-          var sectionElements = $(selector);
 
           sectionElements.addClass(function(element) {
             return $(this).data('animation');
@@ -33,18 +32,33 @@ $(document).ready(function() {
 
           console.log('in view');
         }
+      } else {
+        section.removeClass('in-view');
+        sectionElements.removeClass(function() {
+          return $(this).data('animation');
+        });
       }
+
     });
 
   });
 
   // Nav Item Clicked
   $('.nav-link').click(function() {
+    isAutoScrolling = true;
+
+    window.setTimeout(function() {
+      isAutoScrolling = false;
+    }, 1250);
+
     // Scroll the page to the section that was clicked in the navbar.
     var elementID = $(this).attr('href');
     $('html, body').animate({
       scrollTop: $(elementID).offset().top
-    }, 1500);
+    }, 1500, function() {
+      // Animation complete.
+      // isAutoScrolling = false;
+    });
   });
 
   // Contact Form Submitted
@@ -132,8 +146,9 @@ $(document).ready(function() {
   }
 
   // Main section elements used to trigger animations when the secion is in view.
-  var animatableElements = $('.main-section');
+  var animatableElements = $('.main-section, .card');
 
+  var isAutoScrolling = false;
   // Store the position of the nav.
   var navTopOffset = $('nav').offset().top;
 
