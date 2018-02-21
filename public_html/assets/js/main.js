@@ -23,10 +23,12 @@ $(document).ready(function() {
       var sectionElements = $('#' + section.attr('id')).find('.animated');
 
       if ((bottomPosition >= windowTopPosition + 300) && (topPosition <= windowBottomPosition - 300)) {
+
+        // Change the active nav item.
+        $('.nav-item').removeClass('active');
+        $('.nav-link[href="#' + section.attr('id') + '"]').parent().addClass('active');
+
         if (!section.hasClass('in-view')) {
-          // Change the active nav item.
-          $('.nav-item').removeClass('active');
-          $('.nav-link[href="#' + section.attr('id') + '"]').parent().addClass('active');
 
           section.addClass('in-view');
 
@@ -58,8 +60,10 @@ $(document).ready(function() {
     }, 1250);
 
     // Change the active nav item.
-    $('.nav-item').removeClass('active');
-    $(this).parent().addClass('active');
+    if ($(this).text() !== 'Resume') {
+      $('.nav-item').removeClass('active');
+      $(this).parent().addClass('active');
+    }
 
     // Scroll the page to the section that was clicked in the navbar.
     var elementID = $(this).attr('href');
