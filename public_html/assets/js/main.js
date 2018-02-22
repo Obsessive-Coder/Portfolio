@@ -54,7 +54,7 @@ $(document).ready(function() {
     // Set to true to prevent other animations.
     isAutoScrolling = true;
 
-    // Set timer for 1.25 second that will allow section animations.
+    // Set timer for 1.25 seconds that will allow section animations.
     window.setTimeout(function() {
       isAutoScrolling = false;
     }, 1250);
