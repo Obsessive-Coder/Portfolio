@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // On Window Scroll And Load
-  $(window).on('scroll resize', function() {
+  $(window).on('scroll resize', function () {
     // Set the positioning of the site navbar.
     controlNavbar();
 
@@ -12,8 +12,8 @@ $(document).ready(function() {
     var windowTopPosition = $(window).scrollTop();
     var windowBottomPosition = (windowTopPosition + windowHeight);
 
-    // Anamite when in viewport
-    $.each(animatableElements, function() {
+    // Animite when in viewport
+    $.each(animatableElements, function () {
       var section = $(this);
 
       var height = section.outerHeight();
@@ -32,7 +32,7 @@ $(document).ready(function() {
 
           section.addClass('in-view');
 
-          sectionElements.addClass(function(element) {
+          sectionElements.addClass(function (element) {
             return $(this).data('animation');
           });
 
@@ -50,12 +50,12 @@ $(document).ready(function() {
   });
 
   // Nav Item Clicked
-  $('.nav-link').click(function() {
+  $('.nav-link').click(function () {
     // Set to true to prevent other animations.
     isAutoScrolling = true;
 
     // Set timer for 1.25 seconds that will allow section animations.
-    window.setTimeout(function() {
+    window.setTimeout(function () {
       isAutoScrolling = false;
     }, 1250);
 
@@ -73,10 +73,10 @@ $(document).ready(function() {
   });
 
   // Contact Form Submitted
-  $('form').submit(function() {
+  $('form').submit(function () {
     event.preventDefault();
 
-    var params = $('form').serializeArray().reduce(function(obj, item) {
+    var params = $('form').serializeArray().reduce(function (obj, item) {
       obj[item.name] = item.value;
       return obj;
     }, {});
@@ -89,10 +89,10 @@ $(document).ready(function() {
     submitButton.text("Sending It...");
 
     emailjs.send(idService, idTemplate, params)
-      .then(function() {
+      .then(function () {
         // CreateStatusAlert("alert-success");
         submitButton.text("Send It");
-      }, function(err) {
+      }, function (err) {
         console.log("Send email failed!\r\n Response:\n" + JSON.stringify(err));
         // CreateStatusAlert("alert-warning");
         submitButton.text("Send It");

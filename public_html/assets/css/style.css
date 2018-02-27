@@ -76,16 +76,10 @@ h4 {
 
 .skill-container {
   margin-top: -75px;
-  animation-duration: 1.5s;
 }
 
 .skill-container ul li {
   width: 100%;
-}
-
-.bio-description {
-  animation-delay: 0.25s;
-  animation-duration: 3s;
 }
 
 .bio-description header {
@@ -115,7 +109,6 @@ h4 {
   max-width: 350px;
   box-shadow: -5px 5px 20px 3px #555;
   transition: all 0.5s ease-in-out;
-  animation-duration: 2.5s;
 }
 
 .bio-pic-shadow {
