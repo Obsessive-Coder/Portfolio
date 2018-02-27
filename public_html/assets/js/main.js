@@ -32,7 +32,7 @@ $(document).ready(function () {
 
           section.addClass('in-view');
 
-          sectionElements.addClass(function (element) {
+          sectionElements.addClass(function () {
             return $(this).data('animation');
           });
 
@@ -101,6 +101,8 @@ $(document).ready(function () {
 
   // Control Navbar
   function controlNavbar() {
+    // REFACTOR: These functions can be simplified.
+
     // *** The navbar controller uses the screen position of the navbar to
     // set its css postion using Bootstrap classes.
 
@@ -155,6 +157,14 @@ $(document).ready(function () {
     }
     // End controlNavbar
   }
+
+  $('#project-battleship').one('animationEnd', function () {
+    alert();
+    $('#project-name-extractor').removeClass(function () {
+      return $('#project-name-extractor').data('animation');
+    });
+    $('#project-name-extractor').addClass('fadeOut');
+  });
 
   // Main section elements used to trigger animations when the secion is in view.
   var animatableElements = $('.main-header, .main-section');
