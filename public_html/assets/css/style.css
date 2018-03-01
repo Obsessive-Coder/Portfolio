@@ -354,7 +354,7 @@ form .form-row button:visited {
   .bio-description .bio-text,
   .bio-description .bio-text-more,
   .bio-description .bio-text-most {
-    margin-left: ;
+    /* margin-left: ; */
   }
   .bio-description .bio-text {
     /* width: 65%; */

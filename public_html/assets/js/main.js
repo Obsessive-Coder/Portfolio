@@ -34,6 +34,17 @@ $(document).ready(function () {
 
           sectionElements.addClass(function () {
             return $(this).data('animation');
+          }).one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
+            var projectID = $(this).attr('id');
+
+            switch (projectID) {
+              case 'project-battleship':
+                $('#project-name-extractor').removeClass(function () {
+                  $('#project-name-extractor').data('animation');
+                });
+
+                $('#project-name-extractor').addClass('hinge');
+            }
           });
 
           console.log('in view');
@@ -158,13 +169,14 @@ $(document).ready(function () {
     // End controlNavbar
   }
 
-  $('#project-battleship').one('animationEnd', function () {
-    alert();
-    $('#project-name-extractor').removeClass(function () {
-      return $('#project-name-extractor').data('animation');
-    });
-    $('#project-name-extractor').addClass('fadeOut');
-  });
+  // $('#project-battleship').on('animationend', function () {
+  //   alert();
+  //   $('#project-name-extractor').removeClass(function () {
+  //     return $('#project-name-extractor').data('animation');
+  //   });
+  //   $('#project-name-extractor').addClass('fadeOut');
+  // });
+
 
   // Main section elements used to trigger animations when the secion is in view.
   var animatableElements = $('.main-header, .main-section');
