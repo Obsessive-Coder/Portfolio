@@ -41,6 +41,8 @@
 
 <body class="text-center">
 
+  <!-- TODO: All repetitive elements should be dynamically added with jQuery. -->
+
   <!-- Main Header -->
   <header id="home" class="main-header">
     <div class="header-image"></div>
@@ -75,24 +77,24 @@
   <!-- Main Content -->
   <main class="container-fluid">
     <!-- Bio Section -->
-    <section id="bio" class="main-section">
-      <header class="ml-lg-5 pl-lg-5 text-center">
-        <h1 class="ml-lg-5">What's Up With
+    <section id="bio" class="main-bio main-section">
+      <header class="text-center">
+        <h1 class="">What's Up With
           <em>This</em> Guy?
         </h1>
-        <h2 class="ml-lg-5 pl-lg-5">expect more</h2>
+        <h2>expect more</h2>
       </header>
       <div class="container-fluid">
         <div class="row section-content">
           <!-- Skills -->
-          <div class="animated anim-duration-1_5s col-12 col-lg-4 mb-5 mb-sm-0 pt-3 glow-shadow skill-container" data-animation="slideInLeft">
+          <div class="animated anim-duration-1_5s col-12 col-lg-4 pt-3 glow-shadow skill-container" data-animation="slideInLeft">
             <div class="row text-center">
               <!-- Web Development Skills -->
-              <div class="col-6 col-lg-12">
-                <header class="border-bottom border-light">
+              <div class="col-6 col-lg-12 mb-4">
+                <header class="skill-header">
                   <h4>Web Development</h4>
                 </header>
-                <div class="row text-muted">
+                <div class="row">
                   <div class="col-6">
                     <ul class="fa-ul">
                       <li class="fa-li">
@@ -140,14 +142,12 @@
                 </div>
               </div>
 
-              <hr>
-
               <!-- Software Development Skills -->
               <div class="col-6 col-lg-12">
-                <header class="border-bottom border-light">
+                <header class="skill-header">
                   <h4>Software Development</h4>
                 </header>
-                <div class="row text-muted">
+                <div class="row">
                   <div class="col-12">
                     <ul class="fa-ul">
                       <li class="fa-li">
@@ -176,31 +176,24 @@
           <div class="col-12 col-lg-8 order-first order-lg-last mb-5">
             <!-- <div class="rounded"> -->
             <!-- Description -->
-            <section class="px-5 text-right bio-section">
+            <section class="pt-4 pb-2 px-5 text-right glow-shadow bio-section">
               <div class="animated anim-delay-0_2s anim-duration-3s bio-description" data-animation="fadeIn">
                 <header class="text-right">
                   <h3>Jared
                     <br>Huffstutler</h3>
-                  <p class="pr-md-3 text-muted">Self-Taught Web Developer</p>
+                  <p class="my-3 pr-md-3">Self-Taught Web Developer</p>
                 </header>
-                <p class="pr-lg-2 mb-0 bio-text">
-                  Obsessively passionate programmer with an insatiable appetite for learning and improvement.
-                </p>
-                <!-- </p> -->
-                <!-- <p class="bio-text-more"> -->
-                <p class="my-0 my-md-1 pr-md-4 mr-xl-5 bio-text-more">
-                  3 years of web development experience. 5 years of experience in software development practices.
-                </p>
-                <!-- <p class=""> -->
-                <p class="mb-5 pr-3 bio-text-most">
-                  I have also learned non technical skills which include critical thinking, problem solving, time management, and handling
-                  failure and setback.
+                <p class="text-left mt-4">
+                  Obsessively passionate programmer with an insatiable appetite for learning and improvement. 3 years of web development experience.
+                  5 years of experience in software development practices. I have also learned non technical skills which
+                  include critical thinking, problem solving, time management, and handling failure and setback.
                 </p>
               </div>
+
               <!-- Image and Social Links -->
               <div class="rounded-circle bio-pic">
-                <img class="img-fluid rounded-circle" src="assets/images/me.jpg" alt="Bio picture">
-                <div class="rounded-circle bio-pic-shadow">
+                <img class="img-fluid rounded-circle" src="assets/images/me.png" alt="Bio picture">
+                <div class="rounded-circle glow-shadow bio-pic-shadow">
                 </div>
                 <ul class="fa-ul">
                   <li class="fa-li">
@@ -223,7 +216,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="main-section">
+    <section id="projects" class="main-projects main-section">
       <header class="mx-md-5">
         <h1>Has He Done Anything?</h1>
         <h2 class="ml-md-5">pursue excellence</h2>
@@ -231,10 +224,10 @@
       <div class="container-fluid">
         <div class="row section-content project-items">
           <!-- Software Development Portfolio -->
-          <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="col-xs-12 col-md-6 col-lg-4 p-3">
             <!-- Project Card -->
-            <div class="animated anim-delay-2s card text-white" data-animation="zoomIn">
-              <img class="card-img img-fluid" src="assets/images/projects/portfolio.jpg" alt="project photo">
+            <div class="animated anim-delay-2s card text-white glow-shadow" data-animation="zoomIn">
+              <img class="card-img img-fluid" src="assets/images/projects/portfolio.png" alt="project photo">
               <div class="card-img-overlay">
                 <h5 class="card-title">Personal Portfolio</h5>
                 <ul class="fa-ul project-info">
@@ -260,10 +253,10 @@
             </div>
           </div>
           <!-- Battleship -->
-          <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="col-xs-12 col-md-6 col-lg-4 p-3">
             <!-- Project Card -->
-            <div id="project-battleship" class="animated anim-delay-3_5s card text-white" data-animation="bounceInDown">
-              <img class="card-img img-fluid" src="assets/images/projects/battleship.jpg" alt="project photo">
+            <div id="project-battleship" class="animated anim-delay-3_5s card text-white glow-shadow" data-animation="bounceInDown">
+              <img class="card-img img-fluid" src="assets/images/projects/battleship.png" alt="project photo">
               <div class="card-img-overlay">
                 <h5 class="card-title">Battleship Clone</h5>
                 <ul class="fa-ul project-info">
@@ -287,10 +280,10 @@
             </div>
           </div>
           <!-- Weather App -->
-          <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="col-xs-12 col-md-6 col-lg-4 p-3">
             <!-- Project Card -->
-            <div class="animated card text-white" data-animation="zoomInLeft">
-              <img class="card-img img-fluid" src="assets/images/projects/weather_app.jpg" alt="project photo">
+            <div class="animated card text-white glow-shadow" data-animation="zoomInLeft">
+              <img class="card-img img-fluid" src="assets/images/projects/weather_app.png" alt="project photo">
               <div class="card-img-overlay">
                 <h5 class="card-title">Weather App</h5>
                 <ul class="fa-ul project-info">
@@ -316,10 +309,10 @@
             </div>
           </div>
           <!-- Paycheck Calculator -->
-          <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="col-xs-12 col-md-6 col-lg-4 p-3">
             <!-- Project Card -->
-            <div class="animated anim-delay-4s card text-white" data-animation="rollIn">
-              <img class="card-img img-fluid" src="assets/images/projects/paycheck_calculator.jpg" alt="project photo">
+            <div class="animated anim-delay-4s card text-white glow-shadow" data-animation="rollIn">
+              <img class="card-img img-fluid" src="assets/images/projects/paycheck_calculator.png" alt="project photo">
               <div class="card-img-overlay">
                 <h5 class="card-title">Paycheck Calculator</h5>
                 <ul class="fa-ul project-info">
@@ -343,10 +336,10 @@
             </div>
           </div>
           <!-- Artist Name Extractor -->
-          <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="col-xs-12 col-md-6 col-lg-4 p-3">
             <!-- Project Card -->
-            <div id="project-name-extractor" class="animated anim-delay-3s card text-white" data-animation="bounceIn">
-              <img class="card-img img-fluid" src="assets/images/projects/artist_name_extractor.jpg" alt="project photo">
+            <div id="project-name-extractor" class="animated anim-delay-3s card text-white glow-shadow" data-animation="bounceIn">
+              <img class="card-img img-fluid" src="assets/images/projects/artist_name_extractor.png" alt="project photo">
               <div class="card-img-overlay">
                 <h5 class="card-title">Artist Name Extractor</h5>
                 <ul class="fa-ul project-info">
@@ -370,10 +363,10 @@
             </div>
           </div>
           <!-- Duplicate File Finder -->
-          <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="col-xs-12 col-md-6 col-lg-4 p-3">
             <!-- Project Card -->
-            <div class="animated anim-delay-4s card text-white" data-animation="rotateInUpRight">
-              <img class="card-img img-fluid" src="assets/images/projects/duplicate_file_finder.jpg">
+            <div class="animated anim-delay-4s card text-white glow-shadow" data-animation="rotateInUpRight">
+              <img class="card-img img-fluid" src="assets/images/projects/duplicate_file_finder.png">
               <div class="card-img-overlay">
                 <h5 class="card-title">Duplicate File Founder</h5>
                 <ul class="fa-ul project-info">
@@ -401,7 +394,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="text-right main-section">
+    <section id="contact" class="text-right main-contact main-section">
       <header class="mr-md-5">
         <h1>Let's Work Together</h1>
         <h2 class="mr-md-5">always prepared</h2>
@@ -461,16 +454,16 @@
               <!-- Name -->
               <div class="animated anim-delay-3_6s form-group" data-animation="flipInX">
                 <label class="form-label-lg sr-only" for="name">Name</label>
-                <input class="form-control form-control-lg rounded py-3" type="text" id="name" name="name" placeholder="Your name here..."
+                <input class="form-control form-control-lg py-3" type="text" id="name" name="name" placeholder="Your name here..."
                   required>
                 <div class="invalid-tooltip">
                   I should know who I'll be talking to.
                 </div>
               </div>
               <!-- Email Address -->
-              <div class="animated  anim-delay-4_1s form-group" data-animation="flipInX">
+              <div class="animated my-4 py-1 anim-delay-4_1s form-group" data-animation="flipInX">
                 <label class="form-label-lg sr-only" for="email">Email Address</label>
-                <input class="form-control form-control-lg rounded py-3" type="email" id="email" name="email" placeholder="Your email address here..."
+                <input class="form-control form-control-lg py-3" type="email" id="email" name="email" placeholder="Your email address here..."
                   required>
                 <div class="invalid-tooltip">
                   I need a way to contact you.
@@ -479,7 +472,7 @@
               <!-- Messege -->
               <div class="animated anim-delay-4_6s form-group" data-animation="fadeIn">
                 <label class="form-label-lg sr-only" for="message">Message</label>
-                <textarea class="form-control form-control-lg rounded py-3" name="message" placeholder="Your messege here..." rows="5"></textarea>
+                <textarea class="form-control form-control-lg py-3" name="message" placeholder="Your messege here..." rows="5"></textarea>
               </div>
 
               <div class="form-row">
@@ -487,7 +480,7 @@
                   <!-- Validation Message -->
                 </div>
                 <div class="col-3">
-                  <button class="animated anim-delay-5s btn btn-lg btn-block rounded" id="submit" type="submit" name="submit" data-animation="flipInY">Send It</button>
+                  <button class="animated anim-delay-5s btn btn-lg btn-block" id="submit" type="submit" name="submit" data-animation="flipInY">Send It</button>
                 </div>
               </div>
             </form>

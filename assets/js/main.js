@@ -181,10 +181,12 @@ $(document).ready(function () {
   // Main section elements used to trigger animations when the secion is in view.
   var animatableElements = $('.main-header, .main-section');
 
+  // Used to prevent animations when autoscrolling after a nav item is clicked.
   var isAutoScrolling = false;
+
   // Store the position of the nav.
   var navTopOffset = $('nav').offset().top;
 
-  // Trigger the scroll even to ensure the navbar is positioned correctly
+  // Trigger the scroll event to ensure the navbar is positioned correctly
   $(window).trigger('scroll');
 });
