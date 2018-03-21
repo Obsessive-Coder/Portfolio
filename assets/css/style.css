@@ -59,6 +59,13 @@ h4 {
   /* background-color: rgba(255, 255, 255, 0.03); */
 }
 
+.section-divider {
+  width: 100%;
+  height: 250px;
+  /* background-color: rgba(232, 232 232, 0.1); */
+  background-image: url('../images/pexels-photo-249798.png');
+}
+
 /* Site Navigation */
 
 .site-nav {
@@ -332,7 +339,7 @@ form .form-group {
 form .form-group input,
 form .form-group textarea,
 form .form-group input:focus,
-form .form-group textarea:focus{
+form .form-group textarea:focus {
   background-color: transparent;
   border: none !important;
   caret-color: #ADD8E6;
@@ -343,14 +350,14 @@ form .form-group textarea:focus{
 }
 
 form .form-group input:focus,
-form .form-group textarea:focus{
+form .form-group textarea:focus {
   box-shadow: 15px 15px 50px 5px rgb(0, 0, 0), inset 0 0 50px 1px rgba(173, 216, 230, 0.2), inset 0 0 10px 0px rgb(173, 216, 230);
   transform: scale(1.05, 1.2);
   z-index: 100000000;
 }
 
 form .form-row button,
-form .form-row button:focus{
+form .form-row button:focus {
   background-color: transparent;
   color: #ADD8E6;
   border-radius: 12px;
