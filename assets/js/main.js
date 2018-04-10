@@ -34,17 +34,6 @@ $(document).ready(function () {
 
           sectionElements.addClass(function () {
             return $(this).data('animation');
-          }).one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
-            var projectID = $(this).attr('id');
-
-            switch (projectID) {
-              case 'project-battleship':
-                $('#project-name-extractor').removeClass(function () {
-                  $('#project-name-extractor').data('animation');
-                });
-
-                $('#project-name-extractor').addClass('hinge');
-            }
           });
 
           console.log('in view');
