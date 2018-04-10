@@ -456,12 +456,13 @@
 
           <!-- Contact Form -->
           <div class="col-12 col-md-8 mb-5 order-first order-md-last">
-            <form class="needs-validation mb-5 ml-md-5" action="index.html" method="post" novalidate>
+            <form class="mb-5 ml-md-5" action="index.html" method="post" novalidate="">
               <!-- Name -->
               <div class="animated form-group" data-animation="flipInX">
                 <label class="form-label-lg sr-only" for="name">Name</label>
-                <input class="form-control form-control-lg py-3" type="text" id="name" name="name" placeholder="Your name here..." required>
-                <div class="invalid-tooltip">
+                <input class="form-control form-control-lg py-3" type="text" id="name" name="name" placeholder="Your name here..."
+                  required>
+                <div class="invalid-feedback">
                   I should know who I'll be talking to.
                 </div>
               </div>
@@ -470,7 +471,7 @@
                 <label class="form-label-lg sr-only" for="email">Email Address</label>
                 <input class="form-control form-control-lg py-3" type="email" id="email" name="email" placeholder="Your email address here..."
                   required>
-                <div class="invalid-tooltip">
+                <div class="invalid-feedback">
                   I need a way to contact you.
                 </div>
               </div>
@@ -481,9 +482,6 @@
               </div>
 
               <div class="form-row">
-                <!-- <div class="col text-center">
-
-                </div> -->
                 <div class="col">
                   <button class="animated btn btn-lg" id="submit" type="submit" name="submit" data-animation="flipInY">Send It</button>
                 </div>

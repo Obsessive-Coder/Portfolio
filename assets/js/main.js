@@ -76,6 +76,28 @@ $(document).ready(function () {
   $('form').submit(function () {
     event.preventDefault();
 
+
+    let isValid = true;
+    $.each($('form').find('input'), function(index, value){
+      if($(value).attr('required') && !$(value).val()){
+        $(value).addClass('is-invalid');
+        isValid = false;
+      }else if($(value).attr('type') === 'email'){
+        // RegEx was taken from stack overflow.
+          var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          if(!re.test($(value).val())){
+            $(value).addClass('is-invalid');
+            isValid=false;
+          }
+      } else{
+        $(value).removeClass('is-invalid');
+      }
+    });
+
+    if(!isValid){
+      return false;
+    }
+
     var params = $('form').serializeArray().reduce(function (obj, item) {
       obj[item.name] = item.value;
       return obj;
