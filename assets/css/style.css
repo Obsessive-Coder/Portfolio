@@ -11,14 +11,12 @@ main {
 }
 
 h1,
-h2 {
-  /* mix-blend-mode: color; */
-  /* text-shadow: 1px 0px 1px #353535, 0px 1px 1px rgba(173, 216, 230, 1); */
-}
-
 h3,
-h4 {
-  /* color: #252323; */
+h4,
+.address-info p,
+.email-info p,
+.phone-info p {
+  color: lightblue;
 }
 
 .header-image {
