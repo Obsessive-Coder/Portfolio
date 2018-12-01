@@ -354,6 +354,9 @@ form .form-row button:active {
 }
 
 @media screen and (max-width: 992px) {
+  .contact-panel {
+    /* width: 75% !important; */
+  }
   /* .phone-info,
   .email-info,
   .address-info {
@@ -367,6 +370,10 @@ form .form-row button:active {
 }
 
 @media screen and (max-width: 768px) {
+  .contact-panel {
+    width: 100% !important;
+  }
+
   .site-nav {
     font-size: 1.75rem;
     /* z-index: 1000; */
@@ -380,11 +387,7 @@ form .form-row button:active {
   .bio-description {
     width: 95%;
   }
-  .phone-info,
-  .email-info,
-  .address-info {
-    margin: auto 150px;
-  }
+
   .phone-info p,
   .email-info p,
   .address-info p {
