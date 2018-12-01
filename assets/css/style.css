@@ -215,7 +215,7 @@ h4,
   background-color: transparent;
   text-align: center;
   transition: all 1s ease-in-out;
-  border-radius: 15%;
+  border-radius: 5%;
   width: 100%;
   height: 100%;
 }
@@ -223,7 +223,7 @@ h4,
 .project-items .card,
 .project-items .card img,
 .project-items .card .card-img-overlay {
-  border-radius: 15%;
+  border-radius: 5%;
 }
 
 .project-items .card img {
