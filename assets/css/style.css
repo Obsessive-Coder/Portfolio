@@ -23,12 +23,13 @@ h4,
   background-image: url("../images/main-header.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
+  max-width: 100%;
 }
 
 .main-section {
