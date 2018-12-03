@@ -2,7 +2,7 @@ body {
   font-size: 100%;
   letter-spacing: 0.1rem;
   /* padding-bottom: 150px; */
-  background-color: #252323;
+  background-color: #2b2a2a;
   color: #B0B3B2;
 }
 
@@ -20,16 +20,16 @@ h4,
 }
 
 .header-image {
-  background-image: url("../images/main-header.png");
+  background-image: url("../images/main-header_transparent.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: scroll;
+  background-attachment: unset;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 .main-section {
