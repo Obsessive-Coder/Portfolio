@@ -12,9 +12,6 @@
 <p>
   My portfolio uses HTML, CSS, JavaScript, jQuery, and Bootstrap while maintaining my knowledge of best practices and coding conventions.
 </p>
-<p>
-  I would like to show the project's description in a modal when it is clicked rather than on hover.
-</p>
 <br>
 <p align="center">
   <img src="https://github.com/Obsessive-Coder/Portfolio/blob/master/assets/images/screenshots/home.png?raw=true" width="550" alt="Portfolio Website Home">
