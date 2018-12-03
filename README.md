@@ -10,7 +10,7 @@
   My portfolio helps recruiters, clients, and other potential employers view some of the projects that I have completed. I enjoyed getting the panels to look like glass.
 </p>
 <p>
-  My portfolio uses HTML, CSS, JavaScript, jQuery, and Bootstrap while maintaining my knowledge of best practices and coding conventions.
+  It uses HTML, CSS, JavaScript, jQuery, and Bootstrap while maintaining my knowledge of best practices and coding conventions.
 </p>
 <br>
 <p align="center">
