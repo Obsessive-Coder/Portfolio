@@ -49,36 +49,6 @@ $(document).ready(function () {
 
   });
 
-  $('.project-items .card').on('mouseover', function () {
-
-    const imageOverlay = $(this).find('.card-img-overlay');
-
-    imageOverlay.css('box-shadow', 'inset 0px 0px 0px 200px rgba(5, 5, 5, 0.8)');
-    imageOverlay.css('transition', 'all 0.5s ease-in-out')
-
-    imageOverlay.find('ul li').css('visibility', 'visible');
-    imageOverlay.find('ul li').css('transition', 'all 1s ease-in-out');
-
-    imageOverlay.find('.card-title').css('visibility', 'visible');
-    imageOverlay.find('.card-title').css('transition', 'all 1s ease-in-out');
-
-    imageOverlay.find('.card-text').css('visibility', 'visible');
-    imageOverlay.find('.card-text').css('transition', 'all 1s ease-in-out');
-  });
-
-  $('.project-items .card').on('mouseout', function () {
-
-    const imageOverlay = $(this).find('.card-img-overlay');
-
-    imageOverlay.css('box-shadow', 'none');
-
-    imageOverlay.find('ul li').css('visibility', 'hidden');
-
-    imageOverlay.find('.card-title').css('visibility', 'hidden');
-
-    imageOverlay.find('.card-text').css('visibility', 'hidden');
-  });
-
 
   // Nav Item Clicked
   $('.nav-link').click(function () {
