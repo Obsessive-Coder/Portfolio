@@ -221,7 +221,7 @@ h4,
   /* box-shadow: 5px 5px 10px #888; */
   background-color: transparent;
   text-align: center;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-radius: 5%;
   width: 100%;
   height: 100%;
@@ -250,26 +250,25 @@ h4,
   display: inline;
   /* margin: auto 10px; */
   color: lightblue;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.project-items .card:hover .card-img-overlay {
+/* .project-items .card:hover .card-img-overlay {
   box-shadow: inset 0px 0px 0px 200px rgba(5, 5, 5, 0.8);
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .project-items .card:hover .card-img-overlay ul li,
 .project-items .card:hover .card-img-overlay .card-title,
 .project-items .card:hover .card-img-overlay .card-text {
   visibility: visible;
-  /* transition: all 0.75s ease-in-out; */
-  transition: all 1s ease-in-out;
-}
+  transition: all 0.5s ease-in-out;
+} */
 
-.card:hover {
+/* .card:hover {
   box-shadow: 0 0 3px 3px lightblue;
-  transition: all 1s ease-in-out;
-}
+  transition: all 0.5s ease-in-out;
+} */
 
 /* Contact Section */
 
