@@ -119,7 +119,7 @@ h4,
 .skill-container ul li small:hover {
   transform: scale(1.5);
   color: rgb(173, 216, 230);
-  cursor: pointer;
+  cursor: default;
 }
 
 .bio-section {
@@ -199,11 +199,6 @@ h4,
   color: rgba(173, 216, 230, 1);
 }
 
-.bio-pic:hover img {
-  /* box-shadow: inset 0 0 20px 0px rgba(173, 216, 230, 1); */
-  /* transition: all 0.5s ease-in-out; */
-}
-
 .bio-pic:hover {
   box-shadow: none;
   transition: all 0.5s ease-in-out;
@@ -220,6 +215,11 @@ h4,
 }
 
 /* Project Section */
+
+.project-items a:hover {
+  text-decoration: none;
+  /* transform: scale(1.25); */
+}
 
 .project-items .card {
   /* box-shadow: 5px 5px 10px #888; */
@@ -254,24 +254,24 @@ h4,
   display: inline;
   /* margin: auto 10px; */
   color: lightblue;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.25s ease-in;
 }
 
 .project-items .card:hover .card-img-overlay {
-  box-shadow: inset 0px 0px 0px 200px rgba(5, 5, 5, 0.8);
-  transition: all 0.5s ease-in-out;
+  box-shadow: inset 0px 0px 0px 400px rgba(5, 5, 5, 0.8);
+  transition: all 0.75s ease-in-out;
 }
 
 .project-items .card:hover .card-img-overlay ul li,
 .project-items .card:hover .card-img-overlay .card-title,
 .project-items .card:hover .card-img-overlay .card-text {
   visibility: visible;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.75s ease-in;
 }
 
 .card:hover {
-  box-shadow: 0 0 3px 3px lightblue;
-  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 1px 1px lightblue;
+  transition: all 2s ease-in-out;
 }
 
 /* Contact Section */
@@ -286,7 +286,7 @@ h4,
   letter-spacing: 1rem;
   /* line-height: 1.5rem; */
   line-height: 2rem;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 .phone-info>p {
@@ -459,6 +459,10 @@ form .form-row button:active {
 
   .bio-description p {
     font-size: 0.75rem;
+  }
+
+  .project-items .card .card-img-overlay  {
+    display: none !important;
   }
 }
 

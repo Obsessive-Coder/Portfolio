@@ -111,15 +111,15 @@ $(document).ready(function () {
 
     submitButton.text("Sending It...");
 
-    emailjs.send(idService, idTemplate, params)
-      .then(function () {
-        // CreateStatusAlert("alert-success");
-        submitButton.text("Send It");
-      }, function (err) {
-        console.log("Send email failed!\r\n Response:\n" + JSON.stringify(err));
-        // CreateStatusAlert("alert-warning");
-        submitButton.text("Send It");
-      });
+    // emailjs.send(idService, idTemplate, params)
+    //   .then(function () {
+    //     // CreateStatusAlert("alert-success");
+    //     submitButton.text("Send It");
+    //   }, function (err) {
+    //     console.log("Send email failed!\r\n Response:\n" + JSON.stringify(err));
+    //     // CreateStatusAlert("alert-warning");
+    //     submitButton.text("Send It");
+    //   });
   });
 
   // Control Navbar
