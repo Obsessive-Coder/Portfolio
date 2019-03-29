@@ -35,8 +35,6 @@ $(document).ready(function () {
           sectionElements.addClass(function () {
             return $(this).data('animation');
           });
-
-          console.log('in view');
         }
       } else {
         // section.removeClass('in-view');
@@ -70,7 +68,7 @@ $(document).ready(function () {
     var elementID = $(this).attr('href');
     $('html, body').animate({
       scrollTop: $(elementID).offset().top
-    }, 1500);
+    }, 250);
   });
 
   // Contact Form Submitted
