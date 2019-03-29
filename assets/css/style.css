@@ -284,7 +284,8 @@ h4,
 
 .address-info>p {
   letter-spacing: 1rem;
-  line-height: 1.5rem;
+  /* line-height: 1.5rem; */
+  line-height: 2rem;
   font-size: 3.5rem;
 }
 
