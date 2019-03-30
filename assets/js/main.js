@@ -37,10 +37,10 @@ $(document).ready(function () {
           });
         }
       } else {
-        // section.removeClass('in-view');
-        // sectionElements.removeClass(function() {
-        //   return $(this).data('animation');
-        // });
+        section.removeClass('in-view');
+        sectionElements.removeClass(function() {
+          return $(this).data('animation');
+        });
       }
 
     });
@@ -68,13 +68,12 @@ $(document).ready(function () {
     var elementID = $(this).attr('href');
     $('html, body').animate({
       scrollTop: $(elementID).offset().top
-    }, 250);
+    }, 1250);
   });
 
   // Contact Form Submitted
   $('form').submit(function () {
     event.preventDefault();
-
 
     let isValid = true;
     $.each($('form').find('input'), function (index, value) {
@@ -152,6 +151,7 @@ $(document).ready(function () {
     // Remove fixed-bottom class from the nav if it exists.
     if ($('nav').hasClass('fixed-bottom')) {
       $('nav').removeClass('fixed-bottom');
+      return;
     }
 
     // If the site nav is at the top of the screen ...
@@ -166,6 +166,7 @@ $(document).ready(function () {
       // Remove fixed-top class from nav if it exists.
       if ($('nav').hasClass('fixed-top')) {
         $('nav').removeClass('fixed-top');
+        return;
       }
 
       // If the nav scrolls past the bottom of the windown then add the fixed-bottom class to it.
@@ -173,6 +174,7 @@ $(document).ready(function () {
         // Add fixed-bottom class to nav it it doesn't exist.
         if (!$('nav').hasClass('fixed-bottom')) {
           $('nav').addClass('fixed-bottom');
+          return
         }
       }
     }
