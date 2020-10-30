@@ -3,7 +3,7 @@
   Jared Huffstutler | Full Stack Web Developer
 </h2>
 <p align="center">
-  <a href="http://www.jaredhuffstutler.com">Live preview</a>
+  <a href="https://www.jaredhuffstutler.com">Live preview</a>
 </p>
 <br>
 <p>
